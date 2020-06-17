@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="source/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <title>Parallax Plan</title>
+</head>
+<body>
+    <header class="head">
+        <div class="main-ground"></div>
+        <div class="second-ground"></div>
+
+        <div class="header-container">
+            <h1>Grand mountain climbing</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque facere mollitia obcaecati reprehenderit repudiandae similique, veniam? Autem, culpa, dolore.
+            </p>
+        </div>
+        <div class="first-ground"></div>
+
+    </header>
+    <main>
+        <section>
+            <div class="sectionHead">
+                <h2>Choose your<br>
+                    Adventure</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eligendi et id incidunt libero, magni maiores nam nobis nulla optio quidem repellat repellendus velit? Aliquam asperiores cum delectus, dolor earum eius, eligendi et hic in ipsum laudantium minima molestias nesciunt obcaecati quas quis repellat tempore.</p>
+            </div>
+            <div class="warpCards">
+                <div class="card card1">
+                    <div class="cardNum">01 <span>/03</span> </div>
+                    <div class="cardImg"></div>
+                    <h3 class="cardHead">Camping</h3>
+                    <div class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolore eius eum ipsam porro quasi quisquam recusandae rem vel veniam.</div>
+                    <a href="#" class="cardLink">Explore</a>
+                </div>
+                <div class="card card2">
+                    <div class="cardNum">02 <span>/03</span> </div>
+                    <div class="cardImg"></div>
+                    <h3 class="cardHead">Sightseeing</h3>
+                    <div class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolore eius eum ipsam porro quasi quisquam recusandae rem vel veniam.</div>
+                    <a href="#" class="cardLink">Explore</a>
+                </div>
+                <div class="card card3">
+                    <div class="cardNum">03 <span>/03</span> </div>
+                    <div class="cardImg"></div>
+                    <h3 class="cardHead">Hiking</h3>
+                    <div class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolore eius eum ipsam porro quasi quisquam recusandae rem vel veniam.</div>
+                    <a href="#" class="cardLink">Explore</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="sectionHead">
+                <h2>Browse Our Gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eligendi et id incidunt libero, magni maiores nam nobis nulla optio quidem repellat repellendus velit? Aliquam asperiores cum delectus, dolor earum eius, eligendi et hic in ipsum laudantium minima molestias nesciunt obcaecati quas quis repellat tempore.</p>
+            </div>
+            <div class="sliderBg">
+                <div class="sliderRight">
+                    <div class="sliderHead">
+                        <h3>Place 1<br>Solution</h3>
+                        <div class="sliderHeadText">2018</div>
+                    </div>
+
+                    <div class="sliderText">
+                        <h4>Photography:</h4>
+                        <p>Place 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consectetur exercitationem fugiat, maxime repudiandae sit.</p>
+                        <h4>Year:</h4>
+                        <p>2018</p>
+                        <h4>Narrative:</h4>
+                        <p>Place 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore modi pariatur repellendus tempora totam?</p>
+                        <a class="sliderLink" href="#">Explore Photo</a>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="sliderButton" onclick="sliderActive('+')"> > </div>
+                    <div class="sliderImages">
+                        <div class="sliderImg sliderImg1"></div>
+                        <div class="sliderImg sliderImg2"></div>
+                        <div class="sliderImg sliderImg3"></div>
+                    </div>
+                    <ul class="sliderNav">
+                        <li onclick="sliderActive(0)"></li>
+                        <li onclick="sliderActive(1)"></li>
+                        <li onclick="sliderActive(2)"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="source/script/script.js"></script>
+
+</body>
+</html>

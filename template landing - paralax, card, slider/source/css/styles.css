@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
+    color:#fff;
+}
+/*
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+*/
+body{
+    overflow-x: hidden;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-ground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../image/main-ground.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.second-ground{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../image/second-ground2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    transform: rotateY(180deg);
+
+}
+
+.first-ground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../image/first-ground.png');
+    background-size: cover;
+    background-position: bottom;
+    /*background-attachment: fixed;*/
+}
+
+.header-container{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 10px #000,2px 2px 10px #000,2px 2px 10px #000;
+    top:0;
+    transition: 1s ease;
+}
+.header-container h1{
+    font-size: 80px;
+}
+.header-container p{
+    font-size: 25px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg,#1c205f,#06052a);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sectionHead{
+    width: 90%;
+    margin: auto;
+}
+.warpCards{
+    width: 90%;
+}
+
+
+.sectionHead h2 {
+    font-family: 'Titillium Web', sans-serif;
+    border-bottom: 2px solid #193296;
+}
+
+.sectionHead p {
+    width: 70%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.warpCards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 280px;
+
+    background-image: linear-gradient(0deg,#363182,#4942b0);
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    transform: scale(1.05) translate(0, -15px);
+}
+
+.warpCards:hover > .card:not(:hover){
+    filter: brightness(1) saturate(0) contrast(1) blur(20px);
+}
+
+.cardNum{
+    position: absolute;
+    align-self:start;
+    font-size: 1.7rem;
+    top:5px;
+    left:10px;
+}
+
+.cardNum span{
+    font-size: 0.8rem;
+    color: red;
+}
+
+.cardImg{
+    margin-top: 20px;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.card1 .cardImg{
+    background-image: url("../image/img1.png");
+}
+.card2 .cardImg{
+    background-image: url("../image/img2.png");
+}
+.card3 .cardImg{
+    background-image: url("../image/img3.png");
+}
+
+.cardText{
+    text-align: justify;
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.card a,.sliderText a{
+    text-decoration: none;
+    background: red;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+}
+
+.sliderBg{
+    position: relative;
+    right: -10%;
+    background-image: linear-gradient(0deg,#4942b0,#363182);
+    height: 500px;
+    width: 65%;
+}
+
+.sliderRight, .slider{
+    width: 60%;
+    height: 85%;
+    margin-top: 40px;
+    position: absolute;
+    background-image: linear-gradient(0deg,#4942b0,#363182);
+    right: 0;
+    border-left: 10px solid #fff;
+    z-index: 2;
+}
+
+.slider{
+    border: none;
+    background: #aaa;
+    right: 0;
+    z-index: 1;
+    transition: 2s ease;
+}
+
+.sliderNav{
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.sliderNav li{
+    height: 20px;
+    width: 20px;
+    background: rgba(255,255,255,0.5);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.sliderNav li:hover{
+    background: rgba(255,255,255,0.9);
+}
+
+.sliderButton{
+    height: 80px;
+    width: 80px;
+    background: #4942b0;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+
+    transition: 2s ease;
+
+    cursor: pointer;
+    user-select: none;
+}
+.sliderImages{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sliderImg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: 2s ease;
+}
+
+.sliderImg1{
+    background-image: url("../image/sliderImg1.png");
+}
+.sliderImg2{
+    background-image: url("../image/sliderImg2.png");
+    left:100%;
+    visibility: hidden;
+}
+.sliderImg3{
+    background-image: url("../image/sliderImg3.png");
+    left:100%;
+    visibility: hidden;
+}
+
+.sliderHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    background: #4942b0;
+}
+.sliderHead h3{
+    font-size: 1.5rem;
+    margin-left: 50px;
+
+}
+.sliderHeadText{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-right: 50px;
+    align-self: flex-start;
+}
+
+.sliderText{
+    height: 80%;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
